@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playwrite+BE+VLG:wght@100..400&family=Playwrite+HR:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to right, #fd746c, #2c3e50);
+  background: linear-gradient(to right, #fd746c, #2c3e50);
+}
+.event-form {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event-registration-form {
+  background-image: linear-gradient(
+    319.6deg,
+    rgba(243, 0, 79, 1) 20.5%,
+    rgba(255, 236, 68, 1) 110.9%
+  );
+  width: 550px;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 20px #202020;
+  border-radius: 0 30px 0 30px;
+  color: white;
+}
+.heading {
+  text-align: center;
+}
+.heading h1 {
+  padding-bottom: 10px;
+  font-family: "Playwrite HR", cursive;
+}
+.heading h3 {
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+}
+.heading p {
+  padding-bottom: 20px;
+  font-family: "Pacifico", cursive;
+  font-size: 19px;
+  padding-top: 7px;
+}
+
+form label {
+  font-size: 16px;
+}
+.event-name {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.event-name-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.event-name select,
+input {
+  width: 140px;
+  margin-block: 10px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.event-name select,
+input:focus {
+  border: 2px solid;
+}
+
+.event-address {
+  display: flex;
+  margin-top: 20px;
+}
+.event-address input {
+  width: 200px;
+}
+h5 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.gender input,
+label {
+  width: 60px;
+}
+.language {
+  display: flex;
+  flex-direction: column;
+}
+.language h5 {
+  padding-bottom: 10px;
+}
+.language input {
+  width: 100px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #ff0084 0%,
+    #33001b 51%,
+    #ff0084 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 570px) {
+  .heading h1 {
+    padding-bottom: 10px;
+    font-family: "Playwrite HR", cursive;
+    font-size: 20px;
+  }
+  .heading h3 {
+    font-family: "Noto Serif", serif;
+    font-size: 10px;
+  }
+  .heading p {
+    padding-bottom: 20px;
+    font-family: "Pacifico", cursive;
+    font-size: 16px;
+    padding-top: 7px;
+  }
+  .event-registration-form {
+    width: 350px;
+    height: 100vh;
+  }
+  .event-name-form {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .event-name select,
+  input {
+    width: 80px;
+    margin-block: 5px;
+  }
+  .event-address input {
+    width: 120px;
+  }
+  .language h5 {
+    padding-bottom: 5px;
+  }
+  .language input {
+    width: 40px;
+  }
+}

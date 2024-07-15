@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="event-form">
+      <div class="event-registration-form">
+        <div class="heading">
+          <h1>Event Registration Form</h1>
+          <h3>Guest Information</h3>
+          <p>Please fill name and contact Information</p>
+        </div> 
+
+        <form action="indexData.html">
+          <div class="event-name">
+            <div class="name-label">
+              <label for="name" class="name">Your Name</label>
+            </div>
+            <div class="event-name-form">
+              <div class="select-form">
+                <select name="" id="name">
+                  <option value="Mr">Mr.</option>
+                  <option value="Mrs">Mrs.</option>
+                  <option value="Miss">Miss.</option>
+                  <option value="Ms">Ms.</option>
+                  <option value="Dr">Dr.</option>
+                </select>
+              </div>
+
+              <div class="f-name">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  name="name"
+                  id="name"
+                />
+              </div>
+
+              <div class="last-name">
+                <input type="text" placeholder="Last Name" />
+              </div>
+            </div>
+          </div>
+
+          <div class="event-address">
+            <div class="email">
+              <label for="">Email Address</label>
+              <input type="text" placeholder="example@gmail.com" />
+            </div>
+            <div class="contact">
+              <label for="">Contact Number</label>
+              <input type="text" placeholder="Please enter number" />
+            </div>
+          </div>
+
+          <div class="gender">
+            <h5>Gender</h5>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender">
+            <label for="other">Other</label>
+          </div>
+          
+          <div class="language">
+            <h5>Language You Know</h5>
+
+            <div class="language-box">
+                <input type="checkbox" name="eng" id="eng">
+                <label for="eng">English</label>
+                <input type="checkbox" name="hindi" id="hindi">
+                <label for="hindi">Hindi</label>
+                <input type="checkbox" name="odia" id="odia">
+                <label for="odia">Odia</label>
+            </div>
+           
+          </div>
+
+          <div class="address" >
+            <h5>Address</h5>
+            <input type="text" style="width: 100%; padding: 20px;">
+          </div>
+          <div class="btn">
+          <button class="btn-grad" type="submit">Submit</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
