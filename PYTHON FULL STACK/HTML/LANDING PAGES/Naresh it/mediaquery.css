@@ -1,0 +1,121 @@
+@media(max-width: 1267px){
+    section {
+        padding: 0 4rem;
+    }
+}
+@media(max-width: 1174px){
+    #service-color-2 {
+        box-shadow: 0px 4px 10px rgb(209, 205, 205);
+        transition: .45s ease;
+    }
+    .home-text h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .home-text p {
+        font-size: 10px;
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+    .section-height {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-text {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .service{
+        margin-top: 4rem;
+    }
+}
+@media(max-width: 898px){
+    .home {
+        padding: 4rem ;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home-text {
+        width: 100%;
+    }
+    .home-img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 830px){
+    #service-color-2 {
+        box-shadow: none;
+        transition: .45s ease;
+    }
+    .service-content{
+        width: 100%;
+    }
+}
+@media(max-width: 602px){
+    .nav{
+        display: none;
+    }
+    .about-img {
+        width: 100%;
+        height: 100%;
+        margin-right: 0;
+    }
+    .about-text p {
+        font-size: 10px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+    .highlight span {
+        font-size: 10px;
+    }
+}
+@media(max-width: 457px){
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-link {
+        margin-block: 10px;
+    }
+    section {
+        padding: 0 1rem;
+    }
+    .home {
+        padding: 4rem 1rem  ;
+
+    }
+}
+@media(max-width: 320px){
+    .home-text {
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+    }
+    .contact-share a {
+        font-size: 14px;
+    }
+    .contact-icon i {
+        font-size: 14px;
+    }
+    .contact-content {
+        padding: 13px 20px;
+    }
+    .heading h1 {
+        font-size: 30px;
+    }
+    .heading p {
+        font-size: 14px;
+    }
+}

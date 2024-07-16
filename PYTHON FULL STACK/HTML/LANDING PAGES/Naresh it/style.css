@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;600;800&family=Protest+Revolution&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    background: var(--white);
+}
+
+:root {
+    --black-2: hsl(245, 16%, 16%);
+    --black-1: hsl(244, 17%, 19%);
+    --blue: hsl(245, 67%, 59%);
+    --white-1: hsl(240, 100%, 99%);
+    --white-2: hsl(228, 50%, 96%);
+    --opacity: hsla(0, 0%, 100%, 0.5);
+    --independence: hsl(245, 17%, 27%);
+    --lavender-web: hsl(247, 69%, 95%);
+    --eerie-black: hsl(210, 11%, 15%);
+    --cool-gray: hsl(244, 17%, 61%);
+    --sapphire: hsl(211, 95%, 24%);
+    --white: hsl(0, 0%, 100%);
+    --pink-color: hsla(333, 100%, 53%, 1);
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+.logo {
+    width: 200px;
+    height: 40px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nav a {
+    margin-inline: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    text-underline-offset: 1rem;
+    color: var(--black-2);
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .5s ease;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+section {
+    padding: 0 7rem;
+}
+
+.home {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-text {
+    width: 60%;
+}
+
+.home-text h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.home-text span {
+    color: rgb(15, 43, 255);
+}
+
+.home-text p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.home-img {
+    width: 854px;
+    height: 400px;
+    overflow: hidden;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: var(--blue);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    transition: .5s ease;
+}
+
+button:hover {
+    background: var(--black-1);
+}
+
+.section-height {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-img {
+    width: 640px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h4 {
+    font-size: 25px;
+    color: orangered;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 4px;
+}
+
+.about-text i {
+    font-size: 25px;
+}
+
+.about-text p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    line-height: 2.5;
+}
+
+.highlight i {
+    font-size: 12px;
+    margin-right: 20px;
+    color: orangered;
+}
+
+.highlight span {
+    font-size: 13px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+.heading h1 {
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 40px;
+    color: orangered;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    color: var(--cool-gray);
+    margin-bottom: 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.service-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-content {
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#service-color-1 {
+    box-shadow: 0px 4px 10px rgb(209, 205, 205);
+    transition: .45s ease;
+}
+
+#service-color-1:hover {
+    background: orangered;
+    color: white;
+}
+
+#service-color-1:hover i {
+    background-color: white;
+    color: orangered;
+}
+
+#service-color-2:hover {
+    background: var(--sapphire);
+    color: white;
+}
+
+#service-color-2:hover i {
+    background-color: white;
+    color: var(--sapphire);
+}
+
+.service-content .s-1 {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.service-content h1 {
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.service-content P {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: var(--cool-gray);
+}
+
+.service-content:hover P {
+    color: white;
+}
+
+.service-content .s-2 {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+
+}
+
+.contact-container {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-content {
+    display: flex;
+    border: 2px solid var(--cool-gray);
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.contact-link {
+    margin-inline: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon i {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.contact-share a {
+    color: var(--eerie-black);
+    font-size: 20px;
+    transition: .45s;
+}
+
+.contact-share a:hover {
+    color: var(--cool-gray);
+    text-decoration: underline;
+}
+
+.contact-nav-link {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 25px;
+    margin-inline: 20px;
+    letter-spacing: 1px;
+    transition: all 300ms ease;
+}
+
+.nav-bar a:hover {
+    color: var(--cool-gray);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+
+}
