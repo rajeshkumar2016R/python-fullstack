@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+header {
+    color: white;
+    text-align: center;
+    padding: 10vh;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 66vh;
+}
+
+.text p {
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+.home-img {
+    width: 400px;
+    height: 400px;
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+}
+
+.biography{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    height: 90vh;
+    border-bottom: 1px solid white;
+}
+
+.left{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .45s;
+}
+.biography-img{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+.biography-img:hover::before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(rgba(28, 27, 27, 0.5),rgba(16, 15, 15, 0.8));
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.biography-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.biography-img:hover i{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    border: 4px solid white;
+    border-radius: 20px;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.biography-text{
+    border-radius: 20px;
+    color: white;
+    line-height: 1.4;
+}
+.biography-text h1{
+    color: orangered;
+    font-size: 50px;
+}
+footer{
+    color: white;
+}
+footer h6{
+    padding: 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.video-container{
+    position: absolute;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    width: 100%;
+    height: 90%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container video{
+    width: 50%;
+    height: 450px;
+    position: relative;
+}
+
+.video-container img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 40px;
+    right: 240px;
+    cursor: pointer;
+}
+
+@media(max-width: 975px){
+    .biography{
+        margin-top: 3rem;
+        height: 100%;
+       flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 100%;
+    }
+    .right{
+        width: 100%;
+        margin-top: 4rem;
+    }
+    .video-container{
+        height: 80%;
+
+    }
+    .video-container video{
+        width: 100%;
+        height: 100%;
+    }
+    .video-container img{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 0;
+        right: 30px;
+        cursor: pointer;
+        z-index: 2;
+    }
+}
+@media(max-width: 699px){
+    .home{
+        flex-direction: column;
+        height: 100%;
+        padding: 2rem 0;
+    }
+    .text{
+        margin-top: 4rem;
+    }
+}
+@media(max-width: 519px){
+    .biography{
+        padding: 2rem 1rem;
+        height: 100%;
+    }
+    
+}
+@media(max-width: 403px){
+    .home-img {
+        width: 100%;
+    }
+    .text p {
+        font-size: 20px;
+    }
+}
