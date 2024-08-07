@@ -1,0 +1,675 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  position: fixed;
+  background: transparent;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 120px;
+  z-index: 10;
+  background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)),
+    url(images/✰Zenitsu\ Agatsuma.jpeg);
+}
+header .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 10px;
+}
+header .logo {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+header .logo h1 {
+  font-family: "Noto Serif", serif;
+  letter-spacing: 2px;
+}
+
+.hashira ul {
+  display: flex;
+}
+.hashira ul li {
+  list-style: none;
+  margin-block: 20px;
+  margin-inline: 20px;
+}
+.hashira ul li a {
+  color: white;
+  text-transform: uppercase;
+}
+section {
+  width: 100%;
+  height: 100%;
+  padding: 0 120px;
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  display: flex;
+  background: linear-gradient(rgba(15, 23, 43, 0.4), rgba(15, 23, 43, 1.3)),
+    url(images/✰Zenitsu\ Agatsuma.jpeg);
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  scale: 0;
+  animation: revealsContents 1.5s ease forwards;
+}
+@keyframes revealsContents {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.left h1 {
+  font-family: "Bona Nova SC", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  color: orangered;
+  margin-bottom: 20px;
+}
+.left span {
+  color: rgb(254, 121, 4);
+}
+.left p {
+  font-size: 14px;
+  font-family: "Pacifico", cursive;
+  margin-bottom: 20px;
+}
+.btn {
+  display: flex;
+}
+button {
+  padding: 16px 30px;
+  margin-inline: 5px;
+  cursor: pointer;
+}
+button:nth-child(1) {
+  background-image: linear-gradient(
+    to right,
+    #c21500 0%,
+    #ffc500 51%,
+    #c21500 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 10px #eee;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+button:nth-child(1):hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+button:nth-child(2) {
+  background-color: white;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 1s;
+  background-size: 200% auto;
+  color: black;
+  box-shadow: 0 0 10px #eee;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+button:nth-child(2):hover {
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+}
+.right {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+}
+.right img {
+  height: 430px;
+  scale: 1;
+  animation: reveals 1s ease forwards;
+}
+
+@keyframes reveals {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.right .image1 {
+  z-index: 9;
+  scale: 0;
+  position: absolute;
+  left: 210px;
+  animation-delay: 0.5s;
+}
+.right .image2 {
+  position: absolute;
+  left: 80px;
+  z-index: 3;
+  scale: 0;
+  animation-delay: 1s;
+}
+.right .image3 {
+  position: absolute;
+  top: 260px;
+  left: 400px;
+  z-index: 4;
+  scale: 0;
+  animation-delay: 1.5s;
+}
+.right .image4 {
+  position: absolute;
+  top: 140px;
+  left: 210px;
+  z-index: 2;
+  scale: 0;
+  animation-delay: 2s;
+}
+.right .image5 {
+  position: absolute;
+  top: 156px;
+  left: 400px;
+  z-index: 3;
+  scale: 0;
+  animation-delay: 2.5s;
+}
+.right .image6 {
+  position: absolute;
+  top: 110px;
+  left: 260px;
+  scale: 0;
+  animation-delay: 3s;
+}
+
+/*  ****** indexRengoku.html ******** */
+.header-section {
+  width: 100%;
+  position: fixed;
+  background: transparent;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 120px;
+  z-index: 10;
+  background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9));
+}
+.header-section h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.logo-2 {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.logo-2 img {
+  width: 60px;
+  height: 60px;
+}
+.hashira-names {
+  color: white;
+  margin-right: 60px;
+  font-family: "Kalnia Glaze", serif;
+  letter-spacing: 10px;
+  font-size: 25px;
+}
+.home-carecter {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  background: linear-gradient(rgba(15, 23, 43, 0.5), rgba(15, 23, 43, 0.6)),
+    url(images/bg5.jpeg);
+}
+.left-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  color: white;
+}
+.name {
+  margin-bottom: 60px;
+}
+.left-content h1 {
+  font-family: "Kalnia Glaze", serif;
+  font-size: 60px;
+}
+.left-content h6 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 15px;
+  color: rgb(147, 147, 147);
+}
+.left-content p {
+  font-size: 14px;
+  font-family: "Pacifico", cursive;
+  line-height: 1.5;
+  font-weight: 100;
+}
+.power {
+  display: flex;
+}
+.power-content {
+  margin-top: 3rem;
+  margin-right: 6rem;
+}
+.power-content h2 {
+  font-size: 35px;
+}
+.power-content p {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 8px;
+  color: rgb(147, 147, 147);
+}
+.middle-content {
+  width: 20%;
+}
+.middle-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.middle-content h4 {
+  margin-top: 4rem;
+  color: white;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-family: "Kalnia Glaze", serif;
+  letter-spacing: 3px;
+}
+.middle-content > i {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.number-div {
+  background-color: white;
+  border-radius: 20px;
+}
+.number {
+  width: 50px;
+  height: 80px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.number a {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+}
+.right-content {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.right-content img {
+  height: 80%;
+}
+
+/* ======= indexTomioka.html ========== */
+
+.carecter2 {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  background: linear-gradient(rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.9)),
+    url(images/tomioka2.jpg);
+}
+
+/* ======= indexShinobu.html ========== */
+
+.carecter3 {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  background: linear-gradient(rgba(15, 23, 43, 0.2), rgba(15, 23, 43, 0.8)),
+    url(images/shinobu.jpeg);
+}
+
+/* ======= indexTanjiro.html ========== */
+
+.carecter4 {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  background: linear-gradient(rgba(15, 23, 43, 0.8), rgba(15, 23, 43, 0.8)),
+    url(images/tkbg2.jpeg);
+}
+
+/* ======= indexInosuke.html ========== */
+
+.carecter5 {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  background: linear-gradient(rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.8)),
+    url(images/inosukebg3.jpg);
+}
+
+/* ========= RESPONSIVE CODE =========== */
+
+@media (max-width: 1500px) {
+  .right .image3 {
+    top: 173px;
+    left: 418px;
+  }
+  .right .image4 {
+    top: 96px;
+    left: 210px;
+  }
+  .right .image5 {
+    top: 118px;
+    left: 411px;
+  }
+  .right .image6 {
+    top: 79px;
+    left: 260px;
+  }
+  .left {
+    width: 38%;
+  }
+
+  .middle-content h4 {
+    display: none;
+  }
+  .middle-content > i {
+    display: none;
+  }
+  .middle-content {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  section {
+    padding: 0 40px;
+  }
+  header {
+    padding: 20px 40px;
+  }
+  .header-section{
+    padding: 20px 40px;
+  }
+}
+@media (max-width: 1175px) {
+  .right img {
+    height: 350px;
+  }
+  .right .image1 {
+    left: 210px;
+  }
+  .right .image2 {
+    left: 112px;
+  }
+  .right .image3 {
+    top: 257px;
+    left: 372px;
+  }
+  .right .image4 {
+    top: 151px;
+    left: 210px;
+  }
+  .right .image5 {
+    top: 164px;
+    left: 371px;
+  }
+  .right .image6 {
+    top: 79px;
+    left: 260px;
+  }
+  .hashira-names {
+    margin-right: 0;
+    font-size: 20px;
+}
+}
+@media (max-width: 1014px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .left {
+    margin-top: 10rem;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 38rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .name {
+    margin-bottom: 40px;
+  }
+  .left-content h1 {
+    font-family: "Kalnia Glaze", serif;
+    font-size: 45px;
+  }
+  .left-content h6 {
+    font-size: 13px;
+  }
+  .left-content p {
+    font-size: 12px;
+  }
+  .power-content {
+    margin-right: 2rem;
+  }
+  .power-content h2 {
+    font-size: 30px;
+  }
+}
+
+
+@media (max-width: 875px) {
+  .home {
+    position: relative;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  header .logo {
+    margin-right: 165px;
+  }
+  .hashira ul {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.8));
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .hashira-names {
+    margin-right: 0;
+    font-size: 15px;
+}
+  .hashira ul li {
+    list-style: none;
+    margin-block: 20px;
+    margin-inline: 20px;
+  }
+  .hashira ul li a {
+    color: white;
+    text-transform: uppercase;
+  }
+  .right img {
+    height: 250px;
+  }
+  .right .image1 {
+    left: 285px;
+    top: 275px;
+  }
+  .right .image2 {
+    left: 210px;
+    top: 256px;
+  }
+  .right .image3 {
+    left: 400px;
+    top: 259px;
+  }
+  .right .image4 {
+    left: 282px;
+    top: 178px;
+  }
+  .right .image5 {
+    left: 371px;
+    top: 202px;
+  }
+  .right .image6 {
+    left: 306px;
+    top: 110px;
+  }
+}
+@media (max-width: 740px){
+  .number-div {
+    border-radius: 40px;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 14;
+}
+.middle-content {
+  width: 0;
+}
+.number {
+  margin-block: 10px;
+  margin-inline: 15px;
+}
+.number a{
+  padding: 18px;
+}
+.left-content{
+  width: 50%;
+}
+.right-content{
+  width: 50%;
+}
+.hashira-names{
+  display: none;
+}
+.header-section{
+  justify-content: center;
+}
+.right-content {
+  width: 50%;
+  height: 450px;
+  margin-top: 46px;
+  align-items: end;
+  justify-content: center;
+}
+}
+
+@media (max-width: 578px) {
+  .hashira ul li {
+    margin-inline: 8px;
+  }
+  .hashira ul li a {
+    font-size: 12px;
+  }
+  .right {
+    display: none;
+  }
+  .left {
+    margin-top: 0;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px){
+  .number {
+    margin-inline: 0px;
+}
+.right-content{
+  display: none;
+}
+.left-content{
+  width: 100%;
+}
+}
+
